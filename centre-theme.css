@@ -79,3 +79,43 @@ footer { background:#106461; }
   .partner-tile { min-height:150px; }
   .card, .partner-summary { padding:24px; }
 }
+
+/* Community-led homepage: photographs and open sections. */
+.home-page .start-strip { border-bottom:1px solid var(--line); }
+.home-page .start-choice { background:transparent; border:0; border-radius:0; padding:8px 12px; }
+.home-page .start-choice small { display:none; }
+.home-page .home-hero { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; }
+.home-page .hero h1 { font-size:clamp(2rem,4vw,3rem); }
+.home-page .home-hero-photo, .home-page .home-community-photo { margin:0; }
+.home-page .home-hero-photo img, .home-page .home-community-photo img { width:100%; height:auto; border-radius:20px; display:block; }
+.home-page .home-hero-photo figcaption { margin-top:12px; color:var(--muted); }
+.home-page .home-address { margin-top:22px; font-size:1rem; }
+.home-page .home-support { display:grid; grid-template-columns:1fr 1.35fr; gap:64px; align-items:start; }
+.home-page .home-support-list { display:grid; gap:24px; }
+.home-page .home-support-list article { border-bottom:1px solid var(--line); padding-bottom:24px; }
+.home-page .home-support-list article:last-child { border-bottom:0; padding-bottom:0; }
+.home-page .home-support-list p { margin:8px 0; }
+.home-page .home-support-list a { font-weight:700; font-size:1rem; }
+.home-page .home-community { display:grid; grid-template-columns:1.15fr 1fr; gap:48px; align-items:center; }
+.home-page .home-community .hero-actions { align-items:center; }
+.home-page .home-quotes { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; }
+.home-page .home-quotes figure { margin:0; padding-top:22px; border-top:3px solid #e28cac; }
+.home-page .home-quotes blockquote { margin:0; font-size:1.125rem; line-height:1.7; }
+.home-page .home-quotes figcaption { margin-top:16px; color:var(--muted); }
+.home-page .home-contribute { display:grid; grid-template-columns:1fr 1fr; gap:64px; }
+.home-page .home-contribute .hero-actions { align-items:center; }
+.home-page .community-photo { border-radius:20px; height:auto; box-shadow:none; }
+.home-page .section { border-top:0; }
+.home-page .section.soft { background-image:none; }
+.home-page .footer-cta { padding:56px 0; }
+@media(max-width:850px) {
+ .home-page .home-hero, .home-page .home-support, .home-page .home-community { grid-template-columns:1fr; gap:32px; }
+ .home-page .home-hero-photo { max-width:650px; }
+ .home-page .home-quotes { grid-template-columns:1fr; gap:28px; }
+}
+@media(max-width:600px) {
+ .home-page .home-contribute { grid-template-columns:1fr; gap:36px; }
+ .home-page .hero { padding:36px 0 44px; }
+ .home-page .home-hero-photo img, .home-page .home-community-photo img { border-radius:14px; }
+ .home-page .start-choice { padding:8px 0; }
+}

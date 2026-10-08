@@ -1,10 +1,38 @@
 /* A warmer, consistent presentation across the Centre website. */
 :root { --cream:#f5eadc; --soft:#e2eeea; --line:#c8d6d0; }
-body { background:#f9f2e8; font-size:1.125rem; }
-header { background:#f5eadc; }
-.hero { background:#f5eadc; }
-.section.soft { background:#e2eeea; }
-.card, .review-card, .partner-card { background:#fffaf3; }
+body {
+  background-color:#f5eadc;
+  background-image:
+    radial-gradient(ellipse at 0% 12%, rgba(184,68,79,.13), transparent 48%),
+    radial-gradient(ellipse at 100% 38%, rgba(47,111,105,.16), transparent 52%),
+    linear-gradient(135deg, #f5eadc, #f4e5df 45%, #e3eeea);
+  font-size:1.125rem;
+}
+header { background:#f5eadc; border-bottom-color:#d2d1c0; }
+.hero {
+  background-color:#eee0ce;
+  background-image:
+    radial-gradient(ellipse at 100% 0%, rgba(47,111,105,.22), transparent 58%),
+    radial-gradient(ellipse at 0% 100%, rgba(184,68,79,.16), transparent 58%),
+    linear-gradient(120deg, #f4e6d4, #ece8d9 55%, #dceae4);
+  border-bottom:1px solid #d2d1c0;
+}
+.section.soft {
+  background-color:#e1ebe4;
+  background-image:linear-gradient(120deg, #e4ede5, #dce9e4 65%, #eee7d9);
+  border-top:1px solid rgba(47,111,105,.12);
+  border-bottom:1px solid rgba(47,111,105,.12);
+}
+.card, .review-card, .partner-card, .partner-tile {
+  background:#fffaf3;
+  box-shadow:0 8px 28px rgba(33,79,75,.06);
+}
+.footer-cta {
+  background:linear-gradient(120deg, #eee1ce, #dce8e1);
+}
+.partner-summary {
+  background-image:linear-gradient(120deg, #dce9e4, #eee6d6);
+}
 h1 { font-size:clamp(2rem,4.5vw,3rem); line-height:1.2; }
 h2 { font-size:clamp(1.5rem,3vw,2rem); line-height:1.3; }
 h3 { font-size:1.25rem; line-height:1.4; }

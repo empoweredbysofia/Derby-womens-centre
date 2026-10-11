@@ -119,3 +119,37 @@ footer { background:#106461; }
  .home-page .home-hero-photo img, .home-page .home-community-photo img { border-radius:14px; }
  .home-page .start-choice { padding:8px 0; }
 }
+
+/* Larger Centre identity and clearer routes into support. */
+header .header-inner { min-height:138px; padding-top:14px; padding-bottom:14px; }
+header .brand img { width:110px; height:110px; }
+header .brand-copy strong { font-size:1.125rem; }
+header .header-actions { gap:12px; flex-wrap:wrap; justify-content:flex-end; }
+header .header-support { order:0; }
+header .header-donate { order:1; }
+header .menu-wrap { order:2; }
+.desktop-nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 32px; padding:12px 16px; border-top:1px solid var(--line); background:var(--cream); }
+.desktop-nav a { font-size:1rem; font-weight:600; text-decoration:none; padding:4px 0; }
+.desktop-nav a:hover, .desktop-nav a[aria-current="page"] { text-decoration:underline; text-underline-offset:6px; }
+.contact-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
+.contact-steps article { padding-top:18px; border-top:3px solid #e28cac; }
+.contact-steps p { margin:8px 0 0; }
+.visit-guidance { margin-top:24px; padding:24px; border:1px solid var(--line); border-radius:16px; background:var(--cream); }
+.visit-guidance p { margin:8px 0 0; }
+@media(max-width:900px) { .desktop-nav { display:none; } }
+@media(max-width:700px) {
+ header .header-inner { min-height:0; flex-wrap:wrap; gap:12px; padding-top:12px; padding-bottom:12px; }
+ header .brand img { width:85px; height:85px; }
+ header .brand-copy strong { font-size:1rem; }
+ header .brand-copy span { font-size:.875rem; }
+ header .header-actions { width:100%; justify-content:flex-start; gap:8px; }
+ header .header-actions .button, header .menu-button { padding:10px 12px; min-height:44px; font-size:1rem; }
+ header .header-support { flex:1; }
+ header .dropdown-menu { right:0; width:min(310px,calc(100vw - 24px)); }
+ .contact-steps { grid-template-columns:1fr; gap:22px; }
+}
+@media(min-width:701px) and (max-width:900px) {
+ header .brand-copy { max-width:155px; }
+ header .header-actions { gap:8px; }
+ header .header-actions .button, header .menu-button { padding:10px 12px; }
+}
